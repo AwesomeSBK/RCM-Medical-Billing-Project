@@ -334,3 +334,4 @@ The objective of electronic gateway and ERA/EOB management is to efficiently tra
 This GitHub project uses fictional data for educational and portfolio purposes.
 
 Do not upload real patient information, insurance member information, provider credentials, payer credentials, passwords, or confidential employer information.
+
