@@ -54,3 +54,4 @@ Accounts Receivable (AR) management is a key part of the Revenue Cycle Managemen
 ## Objective
 
 The objective of AR management is to reduce outstanding receivables, resolve unpaid claims, minimize aging AR, improve collections, and maintain an efficient revenue cycle.
+
