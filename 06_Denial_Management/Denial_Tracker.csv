@@ -1,0 +1,11 @@
+Denial_ID,Claim_ID,DOS,Payer,Denial_Category,Billed_Amount,Denied_Amount,Denial_Reason,Root_Cause,Action_Taken,Follow_Up_Date,Status,Resolution
+DEN001,CLM1001,01/05/2026,Alpha Health,Eligibility,1250,1250,Inactive Coverage,Eligibility not verified for DOS,Eligibility reviewed and account routed for correction,02/15/2026,Under Review,Pending
+DEN002,CLM1002,01/08/2026,Beta Insurance,Authorization,3200,3200,Missing Authorization,Authorization not obtained before service,Authorization records reviewed and payer contacted,02/18/2026,Appeal in Progress,Pending
+DEN003,CLM1003,01/10/2026,Gamma Health,Coding,850,850,Coding Issue,Coding error during claim preparation,Claim reviewed and corrected claim prepared,02/12/2026,Resubmitted,Pending
+DEN004,CLM1004,01/12/2026,Delta Insurance,Timely Filing,2100,2100,Claim Filed After Deadline,Submission delay during billing process,Timely filing documentation reviewed and appeal prepared,02/20/2026,Appeal Submitted,Pending
+DEN005,CLM1005,01/15/2026,Alpha Health,Duplicate,950,950,Duplicate Claim,Duplicate submission identified,Duplicate claim reviewed and payer contacted,02/10/2026,Resolved,Claim adjusted
+DEN006,CLM1006,01/18/2026,Beta Insurance,Provider,1800,1800,Provider Enrollment Issue,Provider enrollment information not active,Credentialing status reviewed and payer contacted,02/25/2026,In Progress,Pending
+DEN007,CLM1007,01/20/2026,Gamma Health,COB,1450,1450,Other Insurance Primary,Coordination of benefits information outdated,COB information reviewed and payer contacted,02/22/2026,In Progress,Pending
+DEN008,CLM1008,01/22/2026,Delta Insurance,Medical Necessity,2750,2750,Medical Necessity,Documentation did not support payer requirement,Clinical documentation reviewed and appeal prepared,02/28/2026,Appeal Submitted,Pending
+DEN009,CLM1009,01/25/2026,Alpha Health,Patient Information,600,600,Member Information Mismatch,Incorrect member information submitted,Patient insurance information verified and claim corrected,02/08/2026,Resubmitted,Pending
+DEN010,CLM1010,01/28/2026,Beta Insurance,Documentation,1900,1900,Documentation Required,Required documentation not attached,Documentation obtained and appeal submitted,03/01/2026,Appeal Submitted,Pending
