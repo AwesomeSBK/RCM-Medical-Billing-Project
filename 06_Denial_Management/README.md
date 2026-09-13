@@ -2,224 +2,209 @@
 
 ## Overview
 
-Denial management is a critical component of Revenue Cycle Management (RCM). It involves identifying denied claims, determining the root cause, taking corrective action, submitting appeals or corrected claims when appropriate, and monitoring the final resolution.
+Denial management is an important part of the medical billing revenue cycle. It involves identifying denied claims, reviewing denial reasons, determining the root cause, taking corrective action, and following up until the claim is resolved.
 
-This module demonstrates a structured denial management process using fictional data.
+Denials may occur because of eligibility issues, authorization requirements, coding errors, medical necessity, timely filing, provider enrollment, coordination of benefits, documentation, or incorrect insurance information.
 
----
+This module demonstrates a structured denial management and root-cause analysis workflow using fictional data.
 
 ## Denial Management Workflow
 
-```text
 Claim Denied
-     ↓
+      ↓
 Identify Denial
-     ↓
+      ↓
 Review ERA / EOB
-     ↓
-Identify Denial Code
-     ↓
-Determine Root Cause
-     ↓
+      ↓
+Identify Denial Reason
+      ↓
 Categorize Denial
-     ↓
+      ↓
+Determine Root Cause
+      ↓
 Take Corrective Action
-     ↓
-Appeal / Correct / Resubmit
-     ↓
+      ↓
+Correct / Resubmit / Appeal
+      ↓
 Follow Up
-     ↓
-Monitor Resolution
-     ↓
+      ↓
+Monitor Claim Status
+      ↓
+Resolution
+      ↓
 Close Denial
 
----
+## Denial Management
 
-## Denial Management Process
+Denial management involves reviewing rejected or denied claims and determining the appropriate action to recover eligible reimbursement.
 
-### 1. Identify the Denial
+The denial should be investigated based on the payer response, claim information, patient insurance information, coding, authorization, documentation, and applicable payer requirements.
 
-Review:
+## Common Denial Categories
 
-- ERA
-- EOB
-- Payer portal
-- Claim status
-- Denial message
-- Adjustment information
-- Remark information
+Eligibility denial  
+Authorization denial  
+Coding denial  
+Medical necessity denial  
+Timely filing denial  
+Duplicate claim denial  
+Provider enrollment denial  
+Coordination of benefits denial  
+Documentation denial  
+Patient information denial  
+Insurance information denial
 
-### 2. Analyze the Denial
+## Denial Investigation Process
 
-Determine whether the denial is related to:
+Identify the denial from the ERA, EOB, payer portal, or claim status response.
 
-- Eligibility
-- Authorization
-- Coding
-- Medical necessity
-- Provider enrollment
-- Timely filing
-- Duplicate claim
-- Patient information
-- Insurance information
-- Coordination of benefits
-- Documentation
+Review the denial reason and applicable adjustment or remark information.
 
-### 3. Determine Root Cause
+Compare the payer response with the original claim information.
 
-The root cause identifies the underlying process issue that caused the denial.
+Determine the root cause of the denial.
 
-**Example:**
+Take the appropriate corrective action.
 
-Denial: Eligibility inactive
+Submit a corrected claim or appeal when appropriate.
 
-Root Cause: Insurance eligibility was not verified for the date of service.
+Document the follow-up activity.
 
-### 4. Take Corrective Action
+Monitor the claim until resolution.
 
-Possible actions include:
+## Root-Cause Analysis
 
-- Correct claim information
-- Verify eligibility
-- Obtain required documentation
-- Correct coding
-- Review authorization
-- Correct provider information
-- Submit corrected claim
-- Submit an appeal when appropriate
-- Contact payer
-- Escalate when required
+Root-cause analysis is used to identify the underlying process issue that caused the denial.
 
-### 5. Follow Up
+Example:
 
-Document:
+Denial: Eligibility Inactive
 
-- Follow-up date
-- Payer contacted
-- Reference information when appropriate
-- Action taken
-- Next follow-up date
-- Current claim status
+Root Cause: Insurance eligibility was not verified correctly for the date of service.
 
-### 6. Resolution
+Corrective Action: Review the patient's insurance information and determine the appropriate claim action.
 
-Possible outcomes include:
+Preventive Action: Strengthen the eligibility verification process before claim submission.
 
-- Paid
-- Partially paid
-- Corrected and paid
-- Appeal approved
-- Appeal denied
-- Patient responsibility
-- Further follow-up required
+## Corrective Action
 
----
+Corrective actions may include:
 
-## Denial Categories
+Claim correction  
+Insurance information correction  
+Eligibility verification  
+Authorization review  
+Coding correction  
+Provider information correction  
+Documentation submission  
+Corrected claim submission  
+Appeal submission  
+Payer follow-up
 
-| Category | Examples |
-|---|---|
-| Eligibility | Inactive coverage, terminated coverage |
-| Authorization | Missing or invalid authorization |
-| Coding | Incorrect diagnosis, procedure, or modifier |
-| Medical Necessity | Service not supported according to payer policy |
-| Timely Filing | Claim submitted after payer deadline |
-| Duplicate | Duplicate claim submission |
-| Provider | Enrollment or credentialing issue |
-| COB | Coordination of benefits issue |
-| Documentation | Required documentation missing |
-| Patient Information | Demographic or member information mismatch |
-| Insurance | Incorrect payer or member information |
+## Denial Follow-Up
 
----
+Denial follow-up should include:
+
+Claim ID  
+Payer name  
+Denial reason  
+Denial amount  
+Root cause  
+Action taken  
+Follow-up date  
+Claim status  
+Next action  
+Resolution
+
+## Denial Tracker
+
+The `Denial_Tracker.csv` file contains fictional denial records used to demonstrate denial tracking and follow-up.
+
+The tracker includes:
+
+Denial ID  
+Claim ID  
+Date of Service  
+Payer  
+Denial Category  
+Billed Amount  
+Denied Amount  
+Denial Reason  
+Root Cause  
+Action Taken  
+Follow-Up Date  
+Status  
+Resolution
 
 ## Denial Prioritization
 
 Denials can be prioritized based on:
 
-- Dollar value
-- Aging
-- Filing deadline
-- Denial type
-- Recoverability
-- Payer
-- Frequency of recurring denials
+High-dollar claims  
+Claim aging  
+Timely filing deadline  
+Appeal deadline  
+Recoverability  
+Payer  
+Denial frequency  
+Recurring denial patterns
 
-### High-Priority Denials
-
-- High-dollar claims
-- Claims approaching timely filing deadlines
-- Repeated payer-specific issues
-- Systemic or recurring denials
-- Appeals approaching their filing deadline
-
----
-
-## Denial Follow-Up Example
-
-### Claim Information
-
-- Claim ID: CLM-D001
-- Payer: Alpha Health
-- Billed Amount: $2,500
-- Denial Category: Eligibility
-- Status: Denied
-
-### Investigation
-
-Eligibility was reviewed and coverage was found to be inactive for the date of service.
-
-### Root Cause
-
-Eligibility verification was not completed correctly before claim submission.
-
-### Corrective Action
-
-The eligibility information was reviewed and the account was routed for appropriate follow-up based on the coverage findings.
-
-### Preventive Action
-
-Strengthen the pre-service eligibility verification process and implement a verification checklist.
-
----
+High-priority denials should be addressed first to reduce potential revenue loss.
 
 ## Denial KPIs
 
 Important denial management KPIs include:
 
-- Total denied claims
-- Total denied amount
-- Denial rate
-- Initial denial rate
-- Appeal rate
-- Appeal success rate
-- Denial recovery rate
-- Average denial resolution time
-- Denials by category
-- Denials by payer
-- Repeat denial rate
+Total denied claims  
+Total denied amount  
+Denial rate  
+Denials by payer  
+Denials by category  
+Appeal success rate  
+Denial recovery rate  
+Average denial resolution time  
+Repeat denial rate
 
----
+Example:
 
-## Root-Cause Analysis
+Denial Rate = Denied Claims ÷ Total Claims × 100
 
-The objective of root-cause analysis is to identify why denials occur rather than simply resolving individual claims.
+Appeal Success Rate = Successful Appeals ÷ Total Appeals × 100
 
-### Root-Cause Analysis Workflow
+Denial Recovery Rate = Recovered Denied Amount ÷ Total Denied Amount × 100
 
-```text
-Identify Denial
+## Continuous Improvement
+
+Denial data can be analyzed to identify recurring problems and improve the overall revenue cycle.
+
+Denial Data
       ↓
-Review Denial Data
+Trend Analysis
       ↓
-Identify Pattern
+Root-Cause Analysis
       ↓
-Determine Root Cause
+Corrective Action
       ↓
-Take Corrective Action
+Preventive Action
       ↓
-Implement Preventive Action
+KPI Monitoring
       ↓
-Monitor KPI
-      ↓
-Continuous Improvement
+Process Improvement
+
+Examples of preventive improvements include improving eligibility verification, authorization checks, claim quality, coding review, credentialing monitoring, documentation processes, and timely filing monitoring.
+
+## Related Files
+
+`Denial_Tracker.csv`
+
+Fictional denial tracking dataset containing claim-level denial and follow-up information.
+
+`Root_Cause_Analysis.md`
+
+Detailed root-cause analysis and corrective/preventive action examples.
+
+## Data Privacy
+
+All data used in this project is fictional and created for portfolio demonstration purposes.
+
+No real patient information, PHI, insurance member information, provider credentials, payer credentials, passwords, or confidential employer information should be stored in this public repository.
